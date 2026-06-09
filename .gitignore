@@ -3,3 +3,4 @@ dist
 *.log
 mock/shot-*.png
 .DS_Store
+tsconfig.tsbuildinfo
