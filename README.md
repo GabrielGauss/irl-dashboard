@@ -1,3 +1,12 @@
+<div align="center">
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset=".github/brand/logo-mono.svg">
+  <img src=".github/brand/logo-green.svg" alt="MacroPulse" width="72" height="72">
+</picture>
+
+<sub>Part of the <a href="https://github.com/GabrielGauss/macropulse-platform">MacroPulse platform</a></sub>
+</div>
+
 # IRL Engine · Compliance Console
 
 A read-only, single-page compliance dashboard for the **IRL Engine** — the cryptographic
@@ -57,3 +66,9 @@ node mock/server.mjs        # http://localhost:4000, token: demo-read-token
 ```
 
 Point the dashboard at `http://localhost:4000` with token `demo-read-token`.
+
+---
+
+<div align="center">
+<sub>Part of the <a href="https://github.com/GabrielGauss/macropulse-platform">MacroPulse platform</a> · <a href="https://macropulse.live">macropulse.live</a> · <a href="https://macropulse.live/irl">IRL Engine</a></sub>
+</div>
