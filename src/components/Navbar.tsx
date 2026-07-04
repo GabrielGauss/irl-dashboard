@@ -120,15 +120,42 @@ export function Navbar({
 function BrandMark() {
   return (
     <div className="relative flex h-8 w-8 items-center justify-center rounded-lg border border-accent/30 bg-accent/10">
-      <svg viewBox="0 0 24 24" className="h-[18px] w-[18px] text-accent-bright" fill="none">
-        {/* Stylized seal/lock glyph */}
-        <path
-          d="M12 2 4 5.5v6c0 4.6 3.2 8.4 8 10.5 4.8-2.1 8-5.9 8-10.5v-6L12 2Z"
-          stroke="currentColor"
-          strokeWidth="1.5"
-          strokeLinejoin="round"
-        />
-        <path d="M9 11.5l2 2 4-4.5" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round" />
+      {/* MacroPulse mark — phase-offset striped sphere */}
+      <svg viewBox="0 0 100 100" className="h-[19px] w-[19px] text-accent-bright" fill="none" aria-label="MacroPulse">
+        <defs>
+          <clipPath id="bm-cr">
+            <circle cx="54" cy="50" r="32" />
+          </clipPath>
+          <mask id="bm-lmr">
+            <circle cx="44" cy="50" r="32" fill="#fff" />
+            <circle cx="54" cy="50" r="32" fill="#000" />
+          </mask>
+        </defs>
+        <g fill="currentColor">
+          <g mask="url(#bm-lmr)">
+            <rect x="0" y="13.5" width="100" height="4.9" />
+            <rect x="0" y="22.5" width="100" height="4.9" />
+            <rect x="0" y="31.5" width="100" height="4.9" />
+            <rect x="0" y="40.5" width="100" height="4.9" />
+            <rect x="0" y="49.5" width="100" height="4.9" />
+            <rect x="0" y="58.5" width="100" height="4.9" />
+            <rect x="0" y="67.5" width="100" height="4.9" />
+            <rect x="0" y="76.5" width="100" height="4.9" />
+            <rect x="0" y="85.5" width="100" height="4.9" />
+          </g>
+          <g clipPath="url(#bm-cr)">
+            <rect x="0" y="9" width="100" height="4.9" />
+            <rect x="0" y="18" width="100" height="4.9" />
+            <rect x="0" y="27" width="100" height="4.9" />
+            <rect x="0" y="36" width="100" height="4.9" />
+            <rect x="0" y="45" width="100" height="4.9" />
+            <rect x="0" y="54" width="100" height="4.9" />
+            <rect x="0" y="63" width="100" height="4.9" />
+            <rect x="0" y="72" width="100" height="4.9" />
+            <rect x="0" y="81" width="100" height="4.9" />
+            <rect x="0" y="90" width="100" height="4.9" />
+          </g>
+        </g>
       </svg>
     </div>
   );
